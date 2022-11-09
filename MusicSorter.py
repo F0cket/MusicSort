@@ -46,8 +46,6 @@ for r, d, f in os.walk(filepath):
             else:
                 fileTags = EasyID3(os.path.join(r,file))
 
-            album = str(fileTags["album"])[2:-2]
-
             try:
                 title = str(fileTags["title"])[2:-2]
             except:
