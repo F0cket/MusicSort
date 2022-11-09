@@ -41,4 +41,7 @@ Sorts music files by reading ID3 tags in accordance to plex's recommended file s
   /No Album Artist
 ```
 
+## ToDo
+* Rename filenames in accordance to plex recommended file structure.
+
 
