@@ -22,7 +22,12 @@ Sorts music files by reading ID3 tags in accordance to plex's recommended file s
 ```python MusicSorter.py```
 
 ## Known Bugs
-* Wav's are not supported by Mutagen. Wav files will be copied to their own folder called /Wav's, but not sorted furhter.
+* Wav's are not supported by Mutagen. Wav files will be copied to their own folder called /Wav's, but not sorted further.
+
+```
+/Root
+  /Wav's
+```
 
 ## Drawbacks
 * This program is reliant on files having proper ID3 tags. If they are incorrect, the files will be sorted incorrectly.
