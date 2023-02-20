@@ -35,13 +35,13 @@ for r, d, f in os.walk(filepath):
     for file in f:
         filedir = os.path.join(r,file)
         try:
-            if ".flac" in file:
+            if file.endswith(".flac"):
                 fileTags = FLAC(os.path.join(r,file))
-            elif ".wav" in file:
-                direxist(os.path.join(outpath, r"Wav's"))
-                shutil.copy(filedir,os.path.join(outpath, r"Wav's",file))
+            elif file.endswith(".wav"):
+                direxist(os.path.join(r"X:\Final\Wav's"))
+                shutil.copy(filedir,os.path.join(r"X:\Final\Wav's",file))
                 continue
-            elif ".m4a" in file:
+            elif file.endswith(".m4a"):
                 fileTags = EasyMP4(os.path.join(r,file))
             else:
                 fileTags = EasyID3(os.path.join(r,file))
